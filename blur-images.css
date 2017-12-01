@@ -1,0 +1,16 @@
+.image-thumb-body {
+    filter: blur(10px) brightness(0.5);
+
+/*    
+    opacity: 0.1;
+background-color: #000
+filter: alpha(opacity=50); */
+}
+
+.image-thumb-body:hover {
+filter: blur(0) brightness(1);
+
+/*    opacity: 0.1;
+background-color: #000*/
+/*    filter: alpha(opacity=50); */
+}
