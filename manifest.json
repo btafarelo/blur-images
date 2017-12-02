@@ -1,30 +1,33 @@
 {
+    "manifest_version": 2,
+    "name": "Blur Images",
+    "version": "1.0",
+    "description": "Blur images and show up on mouve over",
 
-  "manifest_version": 2,
-  "name": "Blur Images",
-  "version": "1.0",
+    "icons": {
+        "32": "icons/blur-icon.jpeg"
+    },
 
-  "description": "Blur images and show up on mouve over",
+    "background": {
+        "scripts": ["main.js"]
+    },
 
-  "icons": {
- 
-  },
+    "content_scripts": [{
+        "matches": ["https://web.whatsapp.com/*"],
+        "css": ["blur-images.css"]
+    }],
 
-  "background": {
-    "scripts": ["main.js"]
-  },
+    "browser_action": {
+        "default_icon": "icons/blur-icon.jpeg",
+        "default_title": "Blur Images"
+    },
 
-  "content_scripts": [
-    {
-      "matches": ["https://web.whatsapp.com/*"],
-      "css": ["blur-images.css"]
+    "permissions": [
+        "storage"
+    ],
+
+    "options_ui": {
+        "page": "settings.html",
+        "browser_style": true
     }
-  ],
-
-  "browser_action": {
-    "default_icon": {
-      "32": "icons/blur-icon.jpeg"
-    }
-  }
-
 }
