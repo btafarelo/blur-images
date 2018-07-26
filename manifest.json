@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "Blur Images",
-    "version": "1.0",
+    "name": "WhatsApp Blur Images",
+    "version": "1.1",
     "description": "Blur images and show up on mouve over",
 
     "icons": {
@@ -24,10 +24,5 @@
 
     "permissions": [
         "storage"
-    ],
-
-    "options_ui": {
-        "page": "settings.html",
-        "browser_style": true
-    }
+    ]
 }

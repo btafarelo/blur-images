@@ -1,4 +1,4 @@
-.image-thumb-body {
+.message-out img {
     filter: blur(10px) brightness(0.5);
 
 /*    
@@ -7,7 +7,7 @@ background-color: #000
 filter: alpha(opacity=50); */
 }
 
-.image-thumb-body:hover {
+.message-out img:hover {
 filter: blur(0) brightness(1);
 
 /*    opacity: 0.1;
